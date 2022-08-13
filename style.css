@@ -1,0 +1,199 @@
+:root {
+  --primary-color: #040507;
+  --primary-color-darker: #79654B;
+ }
+
+*{
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  color: white;
+}
+
+body, ul, li, p{
+  background: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  /* font-family: Arial; */
+  font-family: "Oswald", Sans-serif;
+}
+
+/* a{
+  text-decoration: none;
+  color: white;
+} */
+
+.header{
+  background: var(--primary-color-darker);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px;
+  flex-wrap: wrap;
+  font-size: 28px;
+}
+
+#ctaHeader{
+  border: #040507 solid 1px;
+}
+.bio{
+  font-family:"Oswald", Sans-serif;
+  background: var(--primary-color-darker);
+}
+
+.menu{
+  background: var(--primary-color-darker);
+  display: flex;
+}
+
+.menu li{
+  flex-wrap: wrap;
+  background: var(--primary-color-darker);
+  font-size: 28px;
+  padding-left: 10px;
+}
+
+.menu li a{
+  background: var(--primary-color-darker);
+  display: block;
+  padding: 10px;
+  font-family: "Oswald", Sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+/* Esse sinal de maior significar que só vou aplicar na div do main */
+.main > div {
+  /* Os dois primeiros é o quanto ele se expande o ultimo é o valor minimo para ele não quebrar */
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.section{
+  max-width: 93%;
+ display: flex;
+ margin: 5%;
+}
+
+.picture{
+  max-width: 100%;
+}
+
+.description{
+ text-align: center;
+ max-width: 100%;
+}
+
+#jobs{
+  font-family:"Spartan" ;
+  font-size: 30px;
+}
+
+.offer{
+  font-family: "Spartan";
+  font-size: 45px;
+}
+
+.explanation{
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  background-image:url(img/521111.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center center;
+  width: 100%;
+  transition:backdrop-filter 1s;
+}
+
+.text{
+  font-weight: bold;
+  font-size: 35px;
+  margin: 5%;
+  top:600px;
+  position: relative;
+  backdrop-filter: blur(2px);
+  transition: top 2s;
+}
+
+.explanation:hover .text{
+top:0;
+}
+
+
+.budget{
+  text-decoration: none;
+  text-align: center;
+  border:2px solid var(--primary-color-darker) ;
+  background: var(--primary-color-darker);
+  padding: 20px;
+  font-size: 40px;
+  color:white ;
+  font-family:"Spartan" ;
+}
+
+.callToAction{
+ text-align: center;
+ margin: 10%;
+}
+
+.whatsapp-link{
+position:fixed;
+width: 60px;
+height: 60px;
+bottom: 40px;
+right: 40px;
+background-color: #25d366;
+color: #fff;
+border-radius: 50px;
+text-align: center;
+font-size: 40px;
+box-shadow: 1px 1px 2px #888;
+z-index: 1000;
+overflow: hidden;
+}
+
+.fa-whatsapp{
+  margin-top: 10px;
+}
+
+.footer h1{
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.footerNav{
+  margin: 35px;
+}
+
+.footerSocial{
+  display: flex;
+  justify-content:space-between;
+  margin-left:20%;
+  margin-right: 20%;
+  flex-wrap: wrap;
+}
+
+#createdby{
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+ margin-top: 5%;
+}
