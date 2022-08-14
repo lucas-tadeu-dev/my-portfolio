@@ -3,11 +3,19 @@
   --primary-color-darker: #79654B;
  }
 
+ html{
+  font-size: 62.5%;
+ }
+
 *{
   box-sizing: border-box;
   outline: 0;
   text-decoration: none;
   color: white;
+}
+body{
+  /* height: 100vh; */
+  font-size: 1.6rem;
 }
 
 body, ul, li, p{
@@ -32,12 +40,12 @@ body, ul, li, p{
   align-items: center;
   padding: 13px;
   flex-wrap: wrap;
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 
-#ctaHeader{
+/* #ctaHeader{
   border: #040507 solid 1px;
-}
+} */
 .bio{
   font-family:"Oswald", Sans-serif;
   background: var(--primary-color-darker);
@@ -51,7 +59,7 @@ body, ul, li, p{
 .menu li{
   flex-wrap: wrap;
   background: var(--primary-color-darker);
-  font-size: 28px;
+  font-size: 2.8rem;
   padding-left: 10px;
 }
 
@@ -68,7 +76,6 @@ h1{
 
 img{
   max-width: 100%;
-  display: block;
 }
 
 
@@ -78,6 +85,7 @@ img{
   max-width: 95%;
   margin: 0 auto;
   margin-bottom: 70px;
+  height: 100vh;
 }
 /* Esse sinal de maior significar que só vou aplicar na div do main */
 .main > div {
@@ -86,15 +94,30 @@ img{
   margin: 20px;
 }
 
+.main div p{
+  font-size: 2.5rem;  
+}
+
+.projects{
+  border: #fff solid 2px;
+}
+
 .section{
   max-width: 93%;
  display: flex;
  margin: 5%;
+ height: 100vh;
 }
 
 .picture{
   max-width: 100%;
 }
+
+.picture img{
+  width: 1150px;
+  height: 580px;
+}
+
 
 .description{
  text-align: center;
@@ -103,12 +126,12 @@ img{
 
 #jobs{
   font-family:"Spartan" ;
-  font-size: 30px;
+  font-size:3rem;
 }
 
 .offer{
   font-family: "Spartan";
-  font-size: 45px;
+  font-size: 4.5rem;
 }
 
 .explanation{
@@ -125,7 +148,7 @@ img{
 
 .text{
   font-weight: bold;
-  font-size: 35px;
+  font-size: 3.5rem;
   margin: 5%;
   top:600px;
   position: relative;
@@ -144,7 +167,7 @@ top:0;
   border:2px solid var(--primary-color-darker) ;
   background: var(--primary-color-darker);
   padding: 20px;
-  font-size: 40px;
+  font-size: 4rem;
   color:white ;
   font-family:"Spartan" ;
 }
@@ -164,7 +187,7 @@ background-color: #25d366;
 color: #fff;
 border-radius: 50px;
 text-align: center;
-font-size: 40px;
+font-size: 4rem;
 box-shadow: 1px 1px 2px #888;
 z-index: 1000;
 overflow: hidden;
@@ -175,7 +198,7 @@ overflow: hidden;
 }
 
 .footer h1{
-  font-size: 25px;
+  font-size: 2.5rem;
   margin-bottom: 40px;
 }
 
@@ -193,7 +216,108 @@ overflow: hidden;
 
 #createdby{
   text-align: center;
-  font-size: 15px;
+  font-size: 1.5rem;
   margin-bottom: 10px;
  margin-top: 5%;
+}
+
+ /* media queries */
+
+@media (max-width:768px){
+  html{
+    font-size: 40%;
+  }
+}
+
+@media(max-width:768px){
+.section{
+ flex-direction: column;
+ text-align: center;
+}
+}
+
+@media (max-width: 540px){
+  nav{
+    display: none;
+  }
+
+  .one,
+  .two,
+  .three{
+    background-color:#fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle{
+    width: 40px;
+    height: 30px;
+    margin-right:40px;
+  }
+  /* fullscreen */
+  .menu-section.on{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width:100vw;
+    height: 100vh;
+
+    background-color: var(--primary-color-darker);
+
+    z-index:10 ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-section.on nav{
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle{
+  position: absolute;
+  right: 28px;
+  top: 15px;
+  }
+
+  .menu-section.on .menu-toggle .one{
+    transform: rotate(45deg) translate(7px,7px);
+  }
+
+  .menu-section.on .menu-toggle .two{
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three{
+ transform: rotate(-45deg) translate(8px,-9px);
+  }
+
+  .menu-section.on nav ul{
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a{
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem ;
+    display: block;
+  }
+}
+
+@media (max-width:540px) {
+  .main{
+    margin-top: 0;
+    margin-bottom: 60vh;
+  }
+
+  #portfolio{
+    margin-top: 50%;
+   /* display: none; vh*/
+  }
 }
