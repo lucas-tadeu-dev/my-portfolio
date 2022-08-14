@@ -222,7 +222,15 @@ overflow: hidden;
 }
 
  /* media queries */
-
+ @media (max-width:768px){
+  .whatsapp-link{
+    width: 30px;
+    height: 30px;
+  }
+  .fa-whatsapp{
+    margin-top: 0.3px;
+  }
+}
 @media (max-width:768px){
   html{
     font-size: 40%;
