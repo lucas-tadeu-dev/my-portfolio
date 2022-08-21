@@ -79,22 +79,26 @@ img{
 }
 
 
-.main{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 95%;
+.webSites{
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  position: relative;
+  z-index: 1;
+  max-width: 93%;
   margin: 0 auto;
-  margin-bottom: 70px;
-  height: 100vh;
+  margin-bottom:20%;
+  text-align: center;
+  box-shadow: var(--primary-color-darker);
+  gap: 30px;
 }
-/* Esse sinal de maior significar que só vou aplicar na div do main */
-.main > div {
+/* Esse sinal de maior significar que só vou aplicar na div do webSites */
+.webSites > li {
   /* Os dois primeiros é o quanto ele se expande o ultimo é o valor minimo para ele não quebrar */
   flex: 1 1 200px;
-  margin: 20px;
 }
 
-.main div p{
+
+.webSites div p{
   font-size: 2.5rem;  
 }
 
@@ -103,10 +107,13 @@ img{
 }
 
 .section{
+  display: flex;
   max-width: 93%;
- display: flex;
+ align-items: center;
  margin: 5%;
- height: 100vh;
+ height: 75vh;
+ position: relative;
+ margin-bottom: 10%;
 }
 
 .picture{
@@ -114,7 +121,7 @@ img{
 }
 
 .picture img{
-  width: 1200px;
+  width: 900px;
   height: 400px;
   border-radius: 60%;
 }
@@ -145,19 +152,21 @@ img{
   background-position: center center;
   width: 100%;
   transition:backdrop-filter 1s;
+  position: relative;
+  margin-top: 20%;
 }
 
 .text{
   font-weight: bold;
   font-size: 3.5rem;
   margin: 5%;
-  top:600px;
+  top:800px;
   position: relative;
   backdrop-filter: blur(2px);
   transition: top 2s;
 }
 
-.explanation:hover .text{
+.explanation:is(:hover, :focus) .text{
 top:0;
 }
 
@@ -169,8 +178,13 @@ top:0;
   background: var(--primary-color-darker);
   padding: 20px;
   font-size: 4rem;
-  color:white ;
-  font-family:"Spartan" ;
+  color:white;
+  font-family:"Spartan";
+}
+
+.budget:focus{
+  color: black;
+  background-color: rgb(235, 235, 235);
 }
 
 .callToAction{
@@ -222,33 +236,60 @@ overflow: hidden;
 
  /* media queries */
 
+ @media (min-width:2500px){
+  html{
+    font-size: 98%; 
+  }
+  .section{
+    margin-left: 8%;
+  }
+  .webSites{
+    margin-left: 8%;
+  }
+  .picture{
+    transform: scale(1.4);
+  }
+  .description{
+   margin-left: 120px; 
+  }
+  .footerSocial{
+    transform: scale(2);
+    margin: 5%;
+  }
+}
+
+
  @media (max-width:768px){
+  html{
+    font-size: 40%;
+  }
+  .section{
+    flex-wrap: wrap;
+  }
   .whatsapp-link{
     font-size: 8rem;
   }
   .fa-whatsapp{
     margin-top: 0.3px;
   }
-  .main{
-    height:120vh;
+  .webSites{
+    display: grid;    
+    flex-wrap: wrap;
+    max-width: 100vmax;
+    position:relative;
   }
-  .explanation:focus .text{
+  .webSites li{
+    height: 50vh;
+  }
+  .explanation{
+    position: relative;
+  }
+
+  .explanation:is(:hover, :focus) .text{
     top:0;
     }
 }
-@media (max-width:768px){
-  html{
-    font-size: 40%;
-  }
-}
-
-@media(max-width:768px){
-.section{
- flex-direction: column;
- text-align: center;
-}
-}
- 
+ /* MENU TOGGLE */
 
 @media (max-width: 540px){
   nav{
@@ -324,14 +365,45 @@ overflow: hidden;
   }
 }
 
-@media (max-width:540px) {
-  .main{
-    margin-top: 0;
-    margin-bottom: 60vh;
-  }
+/* SCREEN LESS 540PX */
 
-  #portfolio{
-    margin-top: 50%;
-   /* display: none; vh*/
+@media (max-width:540px) {
+  html{
+    font-size: 30%; 
   }
+ .webSites{
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;  
+  gap: 60px;
+  margin: 3%;
+ }
+
+
+ .webSites p{
+  font-size: 3.5rem;
+
+ }
+
+
+ .explanation{
+  position: relative;
+  margin-top: 184vh;
+ }
+
+ .whatsapp-link{
+  font-size: 7rem;
+  width: 40px;
+  height: 40px;
 }
+.fa-whatsapp{
+  margin-top: 1px;
+}
+
+}
+
+/* @media (min-width:1440px){
+  .picture{
+    max-width: 600px;
+  }
+} */
