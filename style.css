@@ -369,8 +369,13 @@ overflow: hidden;
 
 @media (max-width:540px) {
   html{
-    font-size: 30%; 
+    font-size: 40%; 
   }
+
+  .portfolio .sm{
+   font-size: 3rem;
+  }
+
  .webSites{
   display: flex;
   flex-wrap: wrap;
@@ -379,12 +384,13 @@ overflow: hidden;
   margin: 3%;
  }
 
+ .portfolio{
+  margin-top: 30%;
+ }
 
  .webSites p{
   font-size: 3.5rem;
-
  }
-
 
  .explanation{
   position: relative;
