@@ -213,7 +213,7 @@ overflow: hidden;
 }
 
 .footer h1{
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 40px;
 }
 
@@ -299,12 +299,11 @@ padding-right: 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 8px;
-  transition: border-color,
-  box-shadow 0.2s;
+  transition:border-color,box-shadow 0.2s;
 }
 
 .formcontainer textarea{
-  min-height: 13rem;
+  min-height: 20rem;
   resize: vertical;
 }
 
