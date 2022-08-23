@@ -233,6 +233,110 @@ overflow: hidden;
   margin-bottom: 10px;
   margin-top: 5%;
 }
+.sectionThanks{
+  text-align: center;
+  margin-top: 10%;
+  font-family:"Spartan";
+  font-size: 1.8rem;
+}
+.thanks{
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.formcontainer{
+min-height: 70vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
+.footer-form{
+ width: 100%;
+ display: block;
+}
+
+.formcontainer h1{
+  font-size: 2rem;
+}
+
+.formcontainer h1::after{
+  content:"atendimento@lucastadeu.com.br";
+  font-size: 1.6rem;
+}
+
+.formcontainer{
+  width: 60%;
+  margin-left: 20%;
+  /* max-width: 64rem; */
+  font-size: 1.125rem;
+}
+
+.formcontainer label,
+.formcontainer input,
+.formcontainer textarea,
+.formcontainer button{
+  font-size: 1.7rem;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+.formcontainer label{
+  text-align: center;
+  color: white;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.formcontainer input,
+.formcontainer textarea{
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color,
+  box-shadow 0.2s;
+}
+
+.formcontainer textarea{
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.formcontainer input:is(:hover,:focus),
+.formcontainer textarea:is(:hover,:focus){
+  outline: none;
+  border-color: var(--primary-color-darker);
+  box-shadow: 0 0 0 3px var(--primary-color-darker);
+}
+
+.formcontainer button{
+  display: block;
+  padding: 1rem;
+  background-color: var(--primary-color-darker);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.formcontainer button:is(:hover, :focus){
+  outline: 0;
+  background: rgb(238, 184, 20);
+}
+
+
+
+
+
+
 
  /* media queries */
 
@@ -385,7 +489,7 @@ overflow: hidden;
  }
 
  .portfolio{
-  margin-top:300px;
+  margin-top:200px;
  }
 
  .webSites p{
@@ -398,18 +502,8 @@ overflow: hidden;
  }
 
  .whatsapp-link{
-  font-size: 7rem;
+  font-size: 6rem;
   width: 40px;
   height: 40px;
 }
-.fa-whatsapp{
-  margin-top: 1px;
 }
-
-}
-
-/* @media (min-width:1440px){
-  .picture{
-    max-width: 600px;
-  }
-} */
