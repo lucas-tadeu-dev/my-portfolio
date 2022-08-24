@@ -39,3 +39,13 @@ menuToggle.addEventListener('click',()=>{
   menuSection.classList.toggle('on', show)
   show = !show
 })
+
+// TITLE ANIMATION 
+
+var typed = new Typed(".typing",{
+    strings: ["Desenvolvedor", "Freelancer", "Designer", "Programador"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+})
+
