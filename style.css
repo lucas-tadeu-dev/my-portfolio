@@ -68,7 +68,7 @@ body, ul, li, p{
 .menu li a{
   background: var(--primary-color-darker);
   display: block;
-  padding: 10px;
+  padding: 11px;
   font-family: "Oswald", Sans-serif;
 }
 
