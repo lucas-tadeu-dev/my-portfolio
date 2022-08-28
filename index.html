@@ -5,9 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
   <title>Portifólio</title>
+  <!-- CSS -->
   <link rel="stylesheet" href="./style.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- FONT AWESOME -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+  <!-- TEXT ANIMATION -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" ></script>
+
 </head>
 <body>
   
@@ -22,9 +31,9 @@
       </div>
       <nav class="menuNav">
         <ul class="menu">
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#portfolio">Portifólio</a></li>
-          <li><a id="ctaHeader" href="https://wa.me/5515991611540?text=Olá Lucas, gostaria de saber mais sobre seus serviçoes ou fazer um orçamento!" target="_blank">Solicite um orçamento</a></li>
+          <li><a class="btn" href="#services">Serviços</a></li>
+          <li><a class="btn" href="#portfolio">Portifólio</a></li>
+          <li><a class="btn" id="ctaHeader" href="https://wa.me/5515991611540?text=Olá Lucas, gostaria de saber mais sobre seus serviçoes ou fazer um orçamento!" target="_blank">Solicite um orçamento</a></li>
         </ul>
       </nav>
     </div>
@@ -32,6 +41,20 @@
   </header>
 
   <main>
+
+    <section class="proposal">
+      <h1 class="offer">Criação de
+        Sites Profissionais</h1>
+        <p class="proposalTwo">
+        Focado em soluções para pequenos e médios negócios.
+        <br><br><br> <br>
+        Crio sites totalmente personalizados e modernos para potencialiazar e colocar o seu negócio  
+        na frente da sua concorrência.
+        <br><br><br><br>
+        Sites com Certificado de Segurança SSL garantindo para o cliente segurança e confiança!
+        </p>
+    </section>
+
     <section class="section">     
       <picture class="picture" alt="Image">
         <img src="./img/05ec8495-f74d-4316-aa97-0ca340e8256c-removebg-preview.jpg">
@@ -45,39 +68,41 @@
     </div>   
   </section>
 
-  <section class="proposal">
-    <h1 class="offer">Criação de
-      Sites Profissionais</h1>
-      <p class="proposalTwo">
-      Focado em soluções para pequenos e médios negócios.
-      <br><br> 
-      Crio sites totalmente personalizados e modernos para potencialiazar e colocar o seu negócio  
-      na frente da sua concorrência.
-      <br>
-      <br>
-      Sites com Certificado de Segurança SSL garantindo para o cliente segurança e confiança!
-      </p>
-  </section>
   <section class="portfolio" id="portfolio">
-      <h1 class="sm">Ultimos projetos:<br><br></h1>
-      <ul class="webSites">
-        <li>
-            <a href="https://montrealrestaurante.netlify.app/"><img class="projects" src="./img/marktrestaurante.png"></a>
-            <p><br>Site para um Restaurante completo</p>
-        </li>
-        <li>
-          <a href="https://lucas-tadeu-dev.github.io/capture-page/"><img class="projects" src="img\10d3d0e1-a46a-4266-a32a-63f0ddf8b5ec.jfif"></a>
+      <div class="heading">Ultimos projetos:</div>
+      
+      <div class="webSites mx-auto">
+        
+        <div class="box">
+          <a href="https://montrealrestaurante.netlify.app/"><img class="projects" src="./img/lanchonete.jfif"></a>            
+          <h1>ola</h1>
+        </div>
+
+        <div class="box">
+          <a href="https://designinterior.netlify.app/"><img class="projects" src="./img/arquitetura.jfif"></a>
           <p><br>Site para Lançamentos de Marketing Digital</p>
-      </li>
-        <li>
+          <h1>ola</h1>
+      </div>
+  
+        <div class="box">
+          <a href="https://lucas-tadeu-dev.github.io/capture-page/"><img class="projects" src="./img/loja-pets.png"></a>
+          <p><br>Site para Lançamentos de Marketing Digital</p>
+          <h1>ola</h1>
+        </div>
+
+        <div class="box">
+          <a href="https://loja-pet.netlify.app/"><img class="projects" src="img\10d3d0e1-a46a-4266-a32a-63f0ddf8b5ec.jfif"></a>
+          <p><br>Site para Lançamentos de Marketing Digital</p>
+          <h1>ola</h1>
+        </div>
+
+        <div class="box">
           <a href="#"><img class="projects" src="./img/em-breve.png"></a>
           <p><br>Em breve!</p>
-        </li>
-        <li>
-          <a href="#"><img class="projects" src="./img/em-breve.png"></a>
-          <p><br>Em breve!</p>
-      </li>
-    </ul>
+          <h1>ola</h1>
+      </div>
+
+  </div>
   </section>
 
     <section class="explanation" id="services">
@@ -97,18 +122,29 @@
     </div>
 
     <div>
-      <a class="whatsapp-link" href ="https://wa.me/5515991611540?text=Olá Lucas, gostaria de saber mais sobre seus serviçoes ou fazer um orçamento!" target="_blank" ><i class="fa fa-whatsapp"></i></a>
+      <a class="whatsapp-link" href ="https://wa.me/5515991611540?text=Olá Lucas, gostaria de saber mais sobre seus serviçoes ou fazer um orçamento!" target="_blank" ><i class="fab fa-whatsapp"></i></a>
     </div>
 </main>
 
-<footer class="footer">
-  <h1>Conheça também minhas redes sociais:</h1>
-  <ul class="footerSocial">
-        <li><a href="https://instagram.com/lucasbatista088" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a></li>
-        <li><a href = "mailto:atendimento@lucastadeu.com.br"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a></li>
-        <li><a href="https://www.linkedin.com/in/lucas-batista-dev" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a></li>
-      </ul>
+  <section class="social">
 
+    <h1>Conheça também minhas redes sociais:</h1>
+
+    <div class="share">
+    <a href="https://www.facebook.com/lucas.tadeu.1257" target="_blank" class="btn">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/lucas-batista-dev/" target="_blank" class="btn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://instagram.com/lucasbatista088" target="_blank" class="btn">
+        <i class="fab fa-instagram"></i>
+    </a>
+    </div>
+  </section>
+
+
+<footer class="footer">
       <div class="formcontainer">
 
       <h1 class="footer-list-title">Ou você me contatar por aqui mesmo neste formulário!<br></h1>

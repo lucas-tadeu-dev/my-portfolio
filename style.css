@@ -2,7 +2,7 @@
   --primary-color: #040507;
   --primary-color-darker: #79654B;
   --bg-color:#FF393E;
-  --bg-color1: #F2AC29;
+  --bg-color1: #D99E32;
  }
 
  html{
@@ -16,7 +16,6 @@
   color: white;
 }
 body{
-  /* height: 100vh; */
   font-size: 1.6rem;
 }
 
@@ -30,19 +29,69 @@ body, ul, li, p{
   font-family: "Oswald", Sans-serif;
 }
 
-/* a{
-  text-decoration: none;
-  color: white;
-} */
+/*--------------
+      REUSED 
+          --------- */
 
+.heading{
+  font-size: 3.5rem;
+  text-align: center;
+  letter-spacing: 1.7rem;
+  color: var(--light-gray);
+  margin: 2rem 0;
+  padding-bottom: 6rem;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color:var(--bg-color1);
+  text-underline-offset: -1.4rem;
+}
+
+.btn{
+  display:inline-block ;
+  margin-top: 1rem;
+  padding: .7rem 2.5rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  color: var(--black);
+  background: var(--yellow);
+  position: relative;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  top:0; left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 10% 10%, 0 100%);
+  z-index: -1;
+  background: var(--bg-color1);
+  transition: .3s cubic-bezier(.38,1.15,.7,1.15);
+}
+
+.btn:hover:before{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.btn:hover{
+  color: var(--yellow);
+}
+
+
+/*--------------
+      HEADER 
+          --------- */
 .header{
-  background: var(--primary-color-darker);
+  /* background: var(--primary-color-darker); */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 13px;
   flex-wrap: wrap;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
 }
 
 /* #ctaHeader{
@@ -50,7 +99,7 @@ body, ul, li, p{
 } */
 .bio{
   font-family:"Oswald", Sans-serif;
-  background: var(--primary-color-darker);
+  /* background: var(--primary-color-darker); */
 }
 
 .menu{
@@ -60,7 +109,7 @@ body, ul, li, p{
 
 .menu li{
   flex-wrap: wrap;
-  background: var(--primary-color-darker);
+  /* background: var(--primary-color-darker); */
   font-size: 2.8rem;
   padding-left: 10px;
 }
@@ -83,6 +132,10 @@ h1{
 img{
   max-width: 100%;
 }
+
+/*--------------
+      SECTION 
+          --------- */
 
 .section{
   display: flex;
@@ -126,57 +179,87 @@ img{
   font-size: 6rem;
 }
 
+/*--------------
+      PROPOSAL 
+          --------- */
+
  .proposal{
 text-align: center;
-max-width: 80%;
-position:relative;
-display: block;
- margin: 0 auto;
- margin-bottom: 10%;
+/* min-height: 60vh; */
+ background: url(./img/gold-elegant1.jpg) no-repeat;
+ background-size:cover;
+background-position: center;
+align-items: center;
+justify-content: center;
+margin-bottom: 10%;
+padding: 3%;
  }
  
  .offer{
    font-family: "Spartan";
    font-size: 4.5rem;
+   overflow: hidden;
  }
-
  .proposalTwo{
   font-size: 2.8rem;
+  display:contents;
+  max-width: 20ch;
+
  }
+ /* .proposal .offer, .proposal .proposalTwo{
+ padding-top: 10%;
 
+ } */
 
-.webSites{
-  display: grid;
-  grid-template: 1fr 1fr/1fr 1fr;
-  position: relative;
-  z-index: 1;
-  max-width: 93%;
-  margin: 0 auto;
-  margin-bottom:20%;
-  text-align: center;
-  box-shadow: var(--primary-color-darker);
-  gap: 30px;
+/*--------------
+      PORTFOLIO 
+          --------- */
+
+.portfolio{
+  min-height: 100vh;
+
 }
-/* Esse sinal de maior significar que só vou aplicar na div do webSites */
-.webSites > li {
-  /* Os dois primeiros é o quanto ele se expande o ultimo é o valor minimo para ele não quebrar */
-  flex: 1 1 200px;
-}
-.projects{
-  border: #fff solid 2px;
-}
+
 .portfolio li p{
-font-size: 2.5rem;
+ font-size: 2.5rem;
+ }
+            
 
+ .portfolio .webSites{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.sm{
-  font-size:4rem;
+.portfolio .webSites .box{
+  height: 33rem;
+  width: 50rem;
+  margin: 2rem;
+  border-radius: .5rem;
+  box-shadow: 0 .2rem .5rem white;
+  overflow: hidden;
 }
 
-.webSites div p{
-  font-size: 2.5rem;  
+.portfolio .webSites .box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
+
+.portfolio .webSites .box img:hover{
+  transform: scale(1.4);
+}
+
+.portfolio .webSites .box h1{
+  /* position: absolute; */
+  position: relative;
+  margin-left: 8%;
+  z-index: 1000;
+}
+
+/*--------------
+      EXPLANATION 
+          --------- */
 
 .explanation{
   text-align: center;
@@ -248,21 +331,36 @@ overflow: hidden;
   margin-top: 10px;
 }
 
-.footer h1{
+/*--------------
+      FOOTER 
+          --------- */
+
+.social h1{
   font-size: 2.2rem;
-  margin-bottom: 40px;
 }
 
-
-.footerSocial{
+.social .share{
   display: flex;
-  justify-content:center;
-  margin-left:20%;
-  margin-right: 20%;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  /* flex: 1 1 200px; */
-  transform: scale(1.4);
+  padding: 1rem 0;
+}
+
+.social .share a{
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  margin: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0;
+  background: var(--primary-color-darker);
+}
+
+.footer .share a:hover{
+  background: var(--bg-color1);
+
 }
 
 #createdby{
@@ -573,8 +671,8 @@ display: block;
   }
 
 
-  .portfolio .sm{
-   font-size: 3rem;
+  .heading{
+    font-size: 3.5rem;
   }
   .offer{
     font-size: 4rem;
