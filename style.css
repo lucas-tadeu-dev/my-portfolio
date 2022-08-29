@@ -1,6 +1,8 @@
 :root {
   --primary-color: #040507;
+  --light-black:#262626;
   --primary-color-darker: #79654B;
+  --light-coffe:#C19E75;
   --bg-color:#FF393E;
   --bg-color1: #D99E32;
  }
@@ -68,7 +70,7 @@ body, ul, li, p{
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 10% 10%, 0 100%);
   z-index: -1;
-  background: var(--bg-color1);
+  background: #C19E75;
   transition: .3s cubic-bezier(.38,1.15,.7,1.15);
 }
 
@@ -92,6 +94,7 @@ body, ul, li, p{
   padding: 13px;
   flex-wrap: wrap;
   font-size: 2.2rem;
+  background: var(--light-black);
 }
 
 /* #ctaHeader{
@@ -109,7 +112,7 @@ body, ul, li, p{
 
 .menu li{
   flex-wrap: wrap;
-  /* background: var(--primary-color-darker); */
+  background: var(--light-black);
   font-size: 2.8rem;
   padding-left: 10px;
 }
@@ -186,7 +189,7 @@ img{
  .proposal{
 text-align: center;
 /* min-height: 60vh; */
- background: url(./img/gold-elegant1.jpg) no-repeat;
+ /* background: url(./img/gold-elegant1.jpg) no-repeat; */
  background-size:cover;
 background-position: center;
 align-items: center;
@@ -381,7 +384,6 @@ overflow: hidden;
 }
 
 .formcontainer{
-min-height: 70vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -572,7 +574,6 @@ display: block;
     .formcontainer{
       width: 80%;
       margin-left: 10%;
-      margin-top: 5%;
       font-size: 1.125rem;
     }
 
@@ -606,20 +607,20 @@ display: block;
   }
   /* fullscreen */
   .menu-section.on{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: absolute; 
+    top: 0;left: 0;
 
     width:100vw;
     height: 100vh;
 
-    background-color: var(--primary-color-darker);
+    background: var(--light-black);
 
     z-index:10 ;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   .menu-section.on nav{
@@ -647,6 +648,7 @@ display: block;
   .menu-section.on nav ul{
     text-align: center;
     display: block;
+    background: var(--light-black);
   }
 
   .menu-section.on nav ul a{
@@ -654,6 +656,7 @@ display: block;
     font-size: 3rem;
     line-height: 4rem ;
     display: block;
+    margin-top: 10%;
   }
 }
 
@@ -682,9 +685,7 @@ display: block;
  .webSites{
   display: flex;
   flex-wrap: wrap;
-  height: 400px;  
   gap: 60px;
-  margin: 3%;
  }
 
  .portfolio{
@@ -695,21 +696,28 @@ display: block;
   font-size: 3.5rem;
  }
 
- .explanation{
-  position: relative;
-  margin-top: 184vh;
+ .p1{
+  display: none;
  }
 
-.footer{
-  margin-top: 15%;
-}
+ .explanation{
+  position: relative;
+ }
+
  .whatsapp-link{
   font-size: 6rem;
   width: 40px;
   height: 40px;
 }
 
-.formcontainer{
-  margin-top: -70px;
+.budget{
+  font-size: 3rem;
+}
+
+.social .share a{
+  font-size: 3.5rem;
+  height: 5rem;
+  width:5rem;
+  padding-top: .3rem;
 }
 }
