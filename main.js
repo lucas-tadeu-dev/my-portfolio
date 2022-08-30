@@ -3,7 +3,6 @@
 const menuItems = document.querySelectorAll('.menuNav a[href^="#"]')
 
 menuItems.forEach(item => {
-  console.log('clicou')
   item.addEventListener('click', scrolToIdOnclick)
 })
 
@@ -11,7 +10,7 @@ function scrolToIdOnclick(event){
   event.preventDefault()
   const to = getScrollTopByHref(event.target)
   scrollToPosition(to)
-}
+}1
 
 function scrollToPosition(to){
   window.scroll({
@@ -33,11 +32,11 @@ const menuSection = document.querySelector('.menu-section')
 const menuToggle = document.querySelector('.menu-toggle')
 
 menuToggle.addEventListener('click',()=>{
-
-  document.body.style.overflow = show ? "hidden" : "initial"
+  // document.body.style.overflow = show ? "hidden" : "initial" 
 
   menuSection.classList.toggle('on', show)
   show = !show
+  
 })
 
 // TITLE ANIMATION 
@@ -48,4 +47,3 @@ var typed = new Typed(".typing",{
     backSpeed: 60,
     loop: true
 })
-

@@ -7,6 +7,9 @@
   <title>Portifólio</title>
   <!-- CSS -->
   <link rel="stylesheet" href="./style.css"/>
+  
+  <!-- TEXT ANIMATION CDN LIB JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
   <!-- FONT AWESOME -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"> -->
@@ -55,7 +58,7 @@
     </div>   
   </section>
 
-  <section class="proposal">
+  <section class="proposal" data-aos="fade-right" data-aos-duration="1000">
     <h1 class="offer">Criação de
       Sites Profissionais</h1>
       <p class="proposalTwo">
@@ -85,7 +88,7 @@
       </div>
   
         <div class="box">
-          <a href="https://lucas-tadeu-dev.github.io/capture-page/"><img class="projects" src="./img/loja-pets.png"></a>
+          <a href="https://loja-pet.netlify.app/"><img class="projects" src="./img/loja-pets.png"></a>
           <p><br>Site para Lançamentos de Marketing Digital</p>
           <h1>ola</h1>
         </div>
@@ -126,6 +129,26 @@
     </div>
 </main>
 
+  <section class="advantage">
+
+    <h1 class="advantageTitle" data-aos="fade-up" data-aos-duration="1000">Vantagens de fechar seu site comigo:</h1>
+
+    <ul class="advantageList" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+      <li class="advantageLI">Além de programador faço o Design do seu site!</li>
+      <li class="advantageLI">Te entrego uma Palleta de cores pronta, você só precisa escolher!</li>
+      <li class="advantageLI">Conheço tudo sobre hospedagens e domínio(nome: ex.www.seusite..) online!</li>
+      <li class="advantageLI">Preços acessíveis e negociáveis!</li>
+      <li class="advantageLI">Você não precisa se preocupar em procurar design e nen outros profissionais para colocar seu site Online!</li>
+    </ul>
+
+    <h1 class="advantageTitle heading" class="advantageTitle" data-aos="fade-up" data-aos-duration="1000">Blindes</h1>
+    <ul class="prizes" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+      <li class="advantageLI">1 mini-curso de como indexar seu site e ser encontrado no Google!</li>
+      <li class="advantageLI">1 mini-curso ensinando você a cadastrar sua empresa no Google meu negócio!</li>
+      <li class="advantageLI">1 ano de garantia em caso de Erros!</li>
+    </ul>
+  </section>
+
   <section class="social">
 
     <h1>Conheça também minhas redes sociais:</h1>
@@ -165,9 +188,17 @@
       </form> 
     </div>
     <div id="createdby">
-    <a>©2021 - site criado por Lucas Tadeu</a>
+    <a>©2021 - site criado por <span>Lucas Tadeu </span>| Todos Direitos Reservados</a>
+    </div>
  </footer>
+ <!-- JAVASCRIPT -->
 <script src="./main.js"></script>
+<!-- TEXT ANIMATION CDN LIB JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- TEXT ANIMATION JS -->
+<script>
+  AOS.init()
+</script>
 </body>
 </html>
 
