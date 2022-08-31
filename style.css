@@ -342,12 +342,12 @@ margin-left: 10%;
 }
 
 .text{
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 3.5rem;
   margin: 5%;
   top:800px;
   position: relative;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(17px);
   transition: top 2s;
 }
 
