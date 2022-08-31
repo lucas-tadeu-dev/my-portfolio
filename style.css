@@ -368,8 +368,8 @@ top:0;
 }
 
 .budget:is(:hover,:focus){
-  color: black;
   background-color: var(--fourth-color);
+  font-weight: bolder;
 }
 
 .callToAction{
