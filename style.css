@@ -111,10 +111,10 @@ span{
   padding-block-end: 40px;
   margin-left: 5%;
 }
-.has-scrollbar::-webkit-scrollbar{ height: 22px;}
-.has-scrollbar::-webkit-scrollbar-button { width: calc(25%-100px);}
+.has-scrollbar::-webkit-scrollbar{ height: 12px;}
+.has-scrollbar::-webkit-scrollbar-button { width: 85%;}
 .has-scrollbar::-webkit-scrollbar-track{
-  outline: 5px solid #fff;
+  outline: 2px solid #fff;
   border-radius:50px;
 }
 .has-scrollbar::-webkit-scrollbar-thumb{
@@ -125,6 +125,7 @@ span{
 /* -------------------
       BIOGRAPH
 ------------------- */
+
 .bioHeader{
   text-align: center;
   margin-bottom: 30px;
@@ -133,7 +134,7 @@ span{
 }
 
 .biograph{
-  margin-top: -50px;
+  margin-top: -10px;
 }
 
 .bioSection{
@@ -151,6 +152,8 @@ span{
   font-family: var(--ff-2);
   border-top: .5rem solid var(--third-color);
   border-left: .2rem solid var(--third-color);
+  padding: 10px 20px;
+  text-align: start;
 }
 
 .bioSection div p{
@@ -162,7 +165,7 @@ span{
   margin-top: 3%;
   border-top: .5rem solid var(--third-color);
   border-left: .2rem solid var(--third-color);
-  padding: 10px;
+  padding: 20px 20px;
 }
 
 .bioSection .bioPicture{
@@ -230,10 +233,10 @@ img{
 }
 
 /*--------------
-      SECTION 
+      presentation 
           --------- */
 
-.section{
+.presentation{
  display: flex;
  align-items: center;
  max-width: 90%;
@@ -345,13 +348,13 @@ margin-left: 10%;
   justify-content: center;
   flex-direction: column;
   transition:height 0.5s ;
-  text-align: center;
+  text-align: start;
   font-size: 3.5rem;
 }
 
 .layer h3{
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-weight: 800;
+  margin-bottom: 5px;
 }
 
 .layer p{
@@ -360,7 +363,7 @@ margin-left: 10%;
   font-size: 2.5rem;
   background: none;
   width: 75%;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 
@@ -464,6 +467,27 @@ overflow: hidden;
 .fa-whatsapp{
   margin-top: 10px;
 }
+
+/*        HERO        */
+
+.hero{
+  text-align: start;
+  max-width: 90%;
+  margin: 15% 5%;
+}
+
+.hero p{
+font-size: 2.2rem;
+font-weight: 400;
+text-align: start;
+}
+
+.hero h2{
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+
 
 /*      ADVANTAGE       */
 .advantage{
@@ -674,7 +698,7 @@ display: block;
   html{
     font-size: 98%; 
   }
-  .section{
+  .presentation{
    justify-content: center;
   }
   .webSites{
@@ -695,7 +719,7 @@ display: block;
 }
 
 @media (min-width:1440px){
-  .section{
+  .presentation{
     max-width: 70%;
     margin-left: 15%;
   }
@@ -707,7 +731,7 @@ display: block;
     font-size: 50%; 
   }
 
-  .section{
+  .presentation{
     flex-wrap: wrap;
     text-align: center;
   }
@@ -844,13 +868,22 @@ display: block;
     font-size: 45%; 
   }
 
+  .biograph{
+    max-width: 90%;
+    margin-left: 5%;
+  }
+
+  .bioPicture{
+    margin-top: -170px;
+  }
+
   .heading{
     font-size: 2rem;
     letter-spacing: .1rem;
   }
   
 
-  .section{
+  .presentation{
     justify-content: center;
     
   }
@@ -881,6 +914,11 @@ display: block;
   margin-top:130px;
  }
 
+ .layer p{
+  font-weight:normal;
+  font-size: 2.3rem;
+}
+
  .layer a{
   margin-top: 0;
 }
@@ -894,6 +932,16 @@ display: block;
   line-height: 25px;
   padding: .3rem 5rem;
 }
+
+.hero p{
+  font-size: 1.9rem;
+  font-weight:normal;
+  }
+  
+  .hero h2{
+    font-size: 3rem;
+    font-weight: normal;
+  }
 
  .p1{
   display: none;
