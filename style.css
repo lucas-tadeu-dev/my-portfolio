@@ -239,8 +239,8 @@ img{
 .presentation{
  display: flex;
  align-items: center;
- max-width: 90%;
- margin-left: 5%;
+ max-width: 95%;
+ margin-left: 2.5%;
  margin-top: 4%;
  position: relative;
  margin-bottom: 10%;
@@ -509,7 +509,7 @@ text-align: start;
   border-left: .5rem solid var(--fourth-color);
   border-right: .5rem solid var(--fourth-color);
   text-align: center;
-  padding-top: 6rem;
+  padding: 5rem 2rem;
   margin: 2rem 3rem;
 }
 
@@ -597,7 +597,7 @@ padding-right: 1rem;
 
 .formcontainer h1::after{
   content:"atendimento@lucastadeu.com.br";
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--fifth-color);
 }
 
@@ -701,6 +701,7 @@ display: block;
   .presentation{
    justify-content: center;
   }
+
   .webSites{
     margin-left: 8%;
   }
@@ -715,7 +716,9 @@ display: block;
     margin: 5%;
     justify-content:center;
   }
-
+  .whatsapp-link{
+    font-size: 3rem;
+    }
 }
 
 @media (min-width:1440px){
@@ -861,7 +864,11 @@ display: block;
   }
 }
 
-/* SCREEN LESS 540PX */
+/* ------------------------------------------
+
+  SCREEN LESS 540PX  
+
+  -----------------------------------------*/
 
 @media (max-width:540px) {
   html{
@@ -885,12 +892,12 @@ display: block;
 
   .presentation{
     justify-content: center;
-    
   }
 
   .description{
-    margin-left: 0;
     margin-top: 5%;
+    width: 425px;
+    margin-left: 10%;
   }
 
   .picture{
@@ -934,7 +941,7 @@ display: block;
 }
 
 .hero p{
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   font-weight:normal;
   }
   
@@ -949,6 +956,11 @@ display: block;
 
  .explanation .filter{
   flex-wrap: wrap;
+}
+
+.explanation .filter .text{
+  padding: .1rem 1rem;
+  margin-top: 15%;
 }
 
  
