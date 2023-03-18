@@ -259,7 +259,7 @@ img {
 .picture img {
   width: 459px;
   height: 400px;
-  border-radius: 60%;
+  border-radius: 100%;
 }
 
 .description {
@@ -530,7 +530,11 @@ top:0;
 .blindTitle {
   margin-top: 5%;
 }
-
+.share{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 /*--------------
       FOOTER 
           --------- */
@@ -624,7 +628,11 @@ top:0;
   background: var(--fourth-color);
   color: #fff;
 }
-
+#createdby{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 /*<----------
         ------------
       MEDIA QUERIES
@@ -675,7 +683,7 @@ top:0;
     text-align: center;
   }
   .picture {
-    max-width: 60%;
+    max-width: 100%;
     margin-left: 20%;
     margin-bottom: 5%;
   }
